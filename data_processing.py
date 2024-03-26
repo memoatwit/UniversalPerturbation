@@ -66,8 +66,6 @@ def save_eps_results(epsilons, train_data, test_data, perturbation_orig, wdp, at
             df1 = pd.DataFrame.from_dict(resdict,orient='index').T
             resultsdf = pd.concat([resultsdf, df1], join='outer')
 
-
-
     print(f"Generating TEST adv {attack_name} images")
     for i, image in enumerate(test_data):
         for e, eps in enumerate(epsilons):

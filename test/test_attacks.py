@@ -19,11 +19,14 @@ def test_image_tf() -> tf.Tensor:
 def test_images_tf(test_image_tf) -> list[tf.Tensor]:
     return [test_image_tf] * 10
     
-@pytest.fixture
+@pytest.fixture()
 def tf_classifier():
     model, _ = get_mobilenetv2_classifier()
     return model
 
+@pytest.fixture(params=[0, 0.005, 0.01, 0.03, 0.05, 0.1, 0.15, 0.3, 0.5])
+def eps():
+    pass
         
 def test_cleverhans_tf_attacks(test_image_tf, tf_classifier):
     fgsm_noise = tf_fgsm(tf_classifier, test_image_tf, eps=1, norm = np.inf)
