@@ -9,7 +9,7 @@ The paper is accepted to ICAIA and a preprint is submitted to arXiv.
 ## Installation
 Pre-reqs: 
 - Blender Version 4.0.2 (4.0.2 2023-12-05)
-- Python 3.10 
+- Python 3.10 (Required version for Blender API compatibility) <br>
 A sample environment  is included in our requirements and is created with:
 ```
 conda create -n up python=3.10
@@ -18,7 +18,7 @@ pip install tensorflow numpy pillow torch pandas matplotlib cleverhans bpy
 pip freeze > requirements.txt
 ```
 
-You can test the installation with the included sample image by running:
+You can test the installation with the included sample image by running the following:
 > python /Users/memo/Downloads/UniversalPerturbation-testing/main.py
 
 This will generate and compare the proposed Universal attack to our and CleverHans' FGSM implementation.
