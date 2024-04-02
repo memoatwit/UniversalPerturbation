@@ -1,15 +1,23 @@
 # Universal Perturbation
 
-## Multi-View Adversarial Images with a Universal Perturbation
+## One Noise to Rule Them All: Multi-View Adversarial Attacks with Universal Perturbation
 
-This paper proposes a novel universal perturbation method that, despite operating on 2D images, achieves a 3D-like attack capability by generating adversarial examples robust to variations in viewing angle, offering a more practical and scalable alternative to 3D adversarial attacks. This generalizable approach provides multi-view adversarial attacks while keeping the computational efficiency and practical aspects of single-view methods.
+## Abstract
+This paper presents a novel universal perturbation method for generating robust multi-view adversarial examples in 3D object recognition. Unlike conventional attacks limited to single views, our approach operates on multiple 2D images, offering a practical and scalable solution for enhancing model scalability and robustness. This generalizable method bridges the gap between 2D perturbations and 3D-like attack capabilities, making it suitable for real-world applications.
 
-The paper is accepted to ICAIA and a preprint is submitted to arXiv. 
+Existing adversarial attacks may become ineffective when images undergo transformations like changes in lighting, camera position, or natural deformations. We address this challenge by crafting a single universal noise perturbation applicable to various object views. Experiments on diverse rendered 3D objects demonstrate the effectiveness of our approach. The universal perturbation successfully identified a single adversarial noise for each given set of 3D object renders from multiple poses and viewpoints. Compared to single-view attacks, our universal attacks lower classification confidence across multiple viewing angles, especially at low noise levels. A sample implementation is made available at https://github.com/memoatwit/UniversalPerturbation.
+
+### Authors
+Mehmet Ergezer and Phat Duong and Christian Green and Tommy Nguyen and Abdurrahman Zeybey
+
+The paper is presented at ICAIA 2024 and a preprint is submitted to arXiv. 
+
+
 
 ## Installation
 Pre-reqs: 
 - Blender Version 4.0.2 (4.0.2 2023-12-05)
-- Python 3.10 (Required version for Blender API compatibility) <br>
+- Python 3.10 (required version for Blender API compatibility) <br>
 A sample environment  is included in our requirements and is created with:
 ```
 conda create -n up python=3.10
@@ -18,8 +26,8 @@ pip install tensorflow numpy pillow torch pandas matplotlib cleverhans bpy
 pip freeze > requirements.txt
 ```
 
-You can test the installation with the included sample image by running the following:
-> python /Users/memo/Downloads/UniversalPerturbation-testing/main.py
+You can test the installation with the included sample image by running the following: <br>
+```python main.py```
 
 This will generate and compare the proposed Universal attack to our and CleverHans' FGSM implementation.
 
