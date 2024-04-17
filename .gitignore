@@ -1,3 +1,14 @@
 __pycache__
 .pytest_cache
 .vscode
+venv/
+results
+3DRendering/
+blender_render_1.py
+blender_script.py
+blend_main.py
+example-objects.json
+requirements2.txt
+io_scene_usdz.zip
+blender-3.2.2-linux-x64/
+objaverse/
