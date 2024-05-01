@@ -60,9 +60,13 @@ tensorflow-io-gcs-filesystem==0.36.0
 tensorflow-probability==0.24.0
 termcolor==2.4.0
 torch==2.2.2
+torchvision
 typing_extensions==4.10.0
 tzdata==2024.1
 urllib3==2.2.1
 Werkzeug==3.0.2
 wrapt==1.16.0
 zstandard==0.22.0
+segment_anything
+git+https://github.com/openai/CLIP.git
+opencv-python

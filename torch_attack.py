@@ -3,17 +3,23 @@ import numpy as np
 
 from torch.nn import functional
 
-def generate_universal_pertubation(image, text, clip_model, epsilon=1., num_iterations=1, regularization=1., clip_value=1.0):
+def generate_universal_pertubation(image, text, clip_model, target_label, epsilon=1., num_iterations=1, regularization=1., clip_value=1.0):
     image = torch.unsqueeze(image, 0)
 
     pinit = np.random.uniform(-0.01, 0.01, size=image.shape)
     pertubation = torch.from_numpy(pinit)
 
+    _label = functional.one_hot(target_label, 1000)
+
     pertubation.requires_grad = True
 
     for it in range(num_iterations):
-        prediction = clip_model(image, text)
-        loss = functional.cross_entropy(torch.max(prediction).unsqueeze(0), prediction)
+        adv_image = image + pertubation
+        prediction = clip_model(adv_image, text)
+        if target_label:
+            loss = functional.cross_entropy(torch.max(prediction).unsqueeze(0), prediction)
+        else:
+            loss = functional.cross_entropy(torch.max(prediction).unsqueeze(0), _label)
         loss.backward()
         if it%10 == 0:
             print(f"iteration: {it}, loss: {loss.data.numpy()}")
