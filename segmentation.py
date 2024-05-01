@@ -1,3 +1,5 @@
+# Code copied from https://github.com/azeybey/3dgs_under_attack with permission from owner
+
 import os
 import argparse
 import numpy as np
