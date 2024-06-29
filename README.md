@@ -8,11 +8,10 @@ This paper presents a novel universal perturbation method for generating robust 
 Existing adversarial attacks may become ineffective when images undergo transformations like changes in lighting, camera position, or natural deformations. We address this challenge by crafting a single universal noise perturbation applicable to various object views. Experiments on diverse rendered 3D objects demonstrate the effectiveness of our approach. The universal perturbation successfully identified a single adversarial noise for each given set of 3D object renders from multiple poses and viewpoints. Compared to single-view attacks, our universal attacks lower classification confidence across multiple viewing angles, especially at low noise levels. A sample implementation is made available at https://github.com/memoatwit/UniversalPerturbation.
 
 ### Authors
-Mehmet Ergezer and Phat Duong and Christian Green and Tommy Nguyen and Abdurrahman Zeybey
+M. Ergezer, P. Duong, C. Green, T. Nguyen, A. Zeybey
 
-The paper is presented at ICAIA 2024 and a preprint is submitted to arXiv. 
-
-
+### Article
+The paper is presented at ICAIA 2024 and a preprint is submitted to [arXiv](https://arxiv.org/abs/2404.02287). 
 
 ## Installation
 Pre-reqs: 
