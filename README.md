@@ -5,13 +5,13 @@
 ## Abstract
 This paper presents a novel universal perturbation method for generating robust multi-view adversarial examples in 3D object recognition. Unlike conventional attacks limited to single views, our approach operates on multiple 2D images, offering a practical and scalable solution for enhancing model scalability and robustness. This generalizable method bridges the gap between 2D perturbations and 3D-like attack capabilities, making it suitable for real-world applications.
 
-Existing adversarial attacks may become ineffective when images undergo transformations like changes in lighting, camera position, or natural deformations. We address this challenge by crafting a single universal noise perturbation applicable to various object views. Experiments on diverse rendered 3D objects demonstrate the effectiveness of our approach. The universal perturbation successfully identified a single adversarial noise for each given set of 3D object renders from multiple poses and viewpoints. Compared to single-view attacks, our universal attacks lower classification confidence across multiple viewing angles, especially at low noise levels. A sample implementation is made available at https://github.com/memoatwit/UniversalPerturbation.
+Existing adversarial attacks may become ineffective when images undergo transformations like changes in lighting, camera position, or natural deformations. We address this challenge by crafting a single universal noise perturbation applicable to various object views. Experiments on diverse rendered 3D objects demonstrate the effectiveness of our approach. The universal perturbation successfully identified a single adversarial noise for each given set of 3D object renders from multiple poses and viewpoints. Compared to single-view attacks, our universal attacks lower classification confidence across multiple viewing angles, especially at low noise levels. A sample implementation is made available [here](https://github.com/memoatwit/UniversalPerturbation).
 
 ### Authors
 M. Ergezer, P. Duong, C. Green, T. Nguyen, A. Zeybey
 
 ### Article
-The paper is presented at 2nd International Conference on Artificial Intelligence and Applications (ICAIA 2024) and a preprint is submitted to [arXiv](https://arxiv.org/abs/2404.02287) and can be cited as:
+The paper is presented at the 2nd International Conference on Artificial Intelligence and Applications (ICAIA 2024) and a preprint is submitted to [arXiv](https://arxiv.org/abs/2404.02287) and can be cited as:
 ```
 @misc{ergezer2024noiseruleallmultiview,
       title={One Noise to Rule Them All: Multi-View Adversarial Attacks with Universal Perturbation}, 
@@ -49,6 +49,6 @@ This will generate and compare the proposed Universal attack to our and CleverHa
 ```
 
 ## Related Work
-- A. Zeybey, M. Ergezer, and T. Nguyen. ``Gaussian Splatting Under Attack: Investigating Adversarial Noise in 3D Objects.'' NeurIPS Safe Generative AI Workshop, 2024. [https://arxiv.org/abs/2412.02803](ArXiv link).
--  C. Green, M. Ergezer,  A.. Zeybey. ``Targeted View-Invariant Adversarial Perturbations for 3D Object Recognition''. AAAI-25 Workshop on Artificial Intelligence for Cyber Security (AICS), 2025. [https://arxiv.org/abs/2412.13376](ArXiv link)   
--  T. Nguyen, M. Ergezer, C. Green (2025). ``AdvIRL: Reinforcement Learning-Based Adversarial Attacks on 3D NeRF Models''. AAAI-25 Workshop on Artificial Intelligence for Cyber Security (AICS), 2025. [https://arxiv.org/abs/2412.16213](ArXiv link)  
+- A. Zeybey, M. Ergezer, and T. Nguyen. ``Gaussian Splatting Under Attack: Investigating Adversarial Noise in 3D Objects.'' NeurIPS Safe Generative AI Workshop, 2024 [ArXiv](https://arxiv.org/abs/2412.02803).
+-  C. Green, M. Ergezer,  A. Zeybey. ``Targeted View-Invariant Adversarial Perturbations for 3D Object Recognition''. AAAI-25 Workshop on Artificial Intelligence for Cyber Security (AICS), 2025 [ArXiv](https://arxiv.org/abs/2412.13376).
+-  T. Nguyen, M. Ergezer, C. Green (2025). ``AdvIRL: Reinforcement Learning-Based Adversarial Attacks on 3D NeRF Models''. AAAI-25 Workshop on Artificial Intelligence for Cyber Security (AICS), 2025 [ArXiv](https://arxiv.org/abs/2412.16213]).
