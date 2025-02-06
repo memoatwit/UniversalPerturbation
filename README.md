@@ -1,16 +1,28 @@
-# Universal Perturbation
+<div align="center">
+    <h1>One Noise to Rule Them All: Multi-View Adversarial Attacks with Universal Perturbation</h1>
 
-## One Noise to Rule Them All: Multi-View Adversarial Attacks with Universal Perturbation
+  <a href='https://arxiv.org/abs/2404.02287'><img src='https://img.shields.io/badge/ArXiv-PDF-red'></a>
+    <div>
+        <a href='https://github.com/memoatwit' target='_blank'>M. Ergezer <sup>1, 2</sup></a>&emsp;
+        <a href ='https://github.com/phatgd' target='_blank'>P. Duong <sup>1</sup> </a>&emsp;
+    <a href='https://github.com/greenchris10' target='_blank'>C. Green <sup>1</sup></a>&emsp;
+      <a href='https://github.com/Tommy-Nguyen-cpu' target='_blank'>T. Nguyen <sup>1</sup> </a>&emsp;
+          <a href='https://github.com/azeybey' target='_blank'> A. Zeybey <sup>1</sup></a>&emsp;
+  </div>
+  <br>
+  <div>
+      <sup>1</sup> Wentworth Institute of Technology <br>
+      <sup>2</sup> Dr. Ergezer holds concurrent appointments as an Associate Professor at Wentworth Institute of Technology and as an Amazon Visiting Academic. This paper describes work performed at Wentworth Institute of Technology and is not associated with Amazon.
+  </div>
+</div>
 
 ## Abstract
 This paper presents a novel universal perturbation method for generating robust multi-view adversarial examples in 3D object recognition. Unlike conventional attacks limited to single views, our approach operates on multiple 2D images, offering a practical and scalable solution for enhancing model scalability and robustness. This generalizable method bridges the gap between 2D perturbations and 3D-like attack capabilities, making it suitable for real-world applications.
 
 Existing adversarial attacks may become ineffective when images undergo transformations like changes in lighting, camera position, or natural deformations. We address this challenge by crafting a single universal noise perturbation applicable to various object views. Experiments on diverse rendered 3D objects demonstrate the effectiveness of our approach. The universal perturbation successfully identified a single adversarial noise for each given set of 3D object renders from multiple poses and viewpoints. Compared to single-view attacks, our universal attacks lower classification confidence across multiple viewing angles, especially at low noise levels. A sample implementation is made available [here](https://github.com/memoatwit/UniversalPerturbation).
 
-### Authors
-M. Ergezer, P. Duong, C. Green, T. Nguyen, A. Zeybey
 
-### Article
+## Article
 The paper is presented at the 2nd International Conference on Artificial Intelligence and Applications (ICAIA 2024) and a preprint is submitted to [arXiv](https://arxiv.org/abs/2404.02287) and can be cited as:
 ```
 @misc{ergezer2024noiseruleallmultiview,
@@ -51,4 +63,4 @@ This will generate and compare the proposed Universal attack to [CleverHans'](ht
 ## Related Work
 - A. Zeybey, M. Ergezer, and T. Nguyen. ``Gaussian Splatting Under Attack: Investigating Adversarial Noise in 3D Objects.'' NeurIPS Safe Generative AI Workshop, 2024 [ArXiv](https://arxiv.org/abs/2412.02803).
 -  C. Green, M. Ergezer,  A. Zeybey. ``Targeted View-Invariant Adversarial Perturbations for 3D Object Recognition''. AAAI-25 Workshop on Artificial Intelligence for Cyber Security (AICS), 2025 [ArXiv](https://arxiv.org/abs/2412.13376).
--  T. Nguyen, M. Ergezer, C. Green (2025). ``AdvIRL: Reinforcement Learning-Based Adversarial Attacks on 3D NeRF Models''. AAAI-25 Workshop on Artificial Intelligence for Cyber Security (AICS), 2025 [ArXiv](https://arxiv.org/abs/2412.16213]).
+-  T. Nguyen, M. Ergezer, C. Green (2025). ``AdvIRL: Reinforcement Learning-Based Adversarial Attacks on 3D NeRF Models''. AAAI-25 Workshop on Artificial Intelligence for Cyber Security (AICS), 2025 [ArXiv](https://arxiv.org/abs/2412.16213]) and [Project Page](https://tommy-nguyen-cpu.github.io/AdvIRL/)
