@@ -38,14 +38,14 @@ pip install -r requirements.txt
 You can test the installation with the included sample image by running the following: <br>
 ```python main.py```
 
-This will generate and compare the proposed Universal attack to our and CleverHans' FGSM implementation.
+This will generate and compare the proposed Universal attack to [CleverHans'](https://github.com/cleverhans-lab/cleverhans) FGSM implementation.
 ```
-> Target label: `desk` <br>
-> iteration: 0, loss: [0.39462262] <br>
-> (1,) (224, 224, 3) <br>
-> Universal: [[('n03903868', 'pedestal', 0.24639696), ('n03482405', 'hamper', 0.14491189), ('n03127925', 'crate', 0.120108284), ('n03998194', 'prayer_rug', 0.03229109), ('n02971356', 'carton', 0.031419415)]] <br>
-> Our FGSM: [[('n03903868', 'pedestal', 0.13343877), ('n04141975', 'scale', 0.106996596), ('n03482405', 'hamper', 0.09244215), ('n03127925', 'crate', 0.05132524), ('n04553703', 'washbasin', 0.015889827)]] <br>
-> Cleverhans FGSM: [[('n03903868', 'pedestal', 0.1338335), ('n04141975', 'scale', 0.10725212), ('n03482405', 'hamper', 0.091944754), ('n03127925', 'crate', 0.05115742), ('n04553703', 'washbasin', 0.015928818)]] <br>
+> Target label: `desk` 
+> iteration: 0, loss: [0.39462262] 
+> (1,) (224, 224, 3) 
+> Universal: [[('n03903868', 'pedestal', 0.24639696), ('n03482405', 'hamper', 0.14491189), ('n03127925', 'crate', 0.120108284), ('n03998194', 'prayer_rug', 0.03229109), ('n02971356', 'carton', 0.031419415)]] 
+> Our FGSM: [[('n03903868', 'pedestal', 0.13343877), ('n04141975', 'scale', 0.106996596), ('n03482405', 'hamper', 0.09244215), ('n03127925', 'crate', 0.05132524), ('n04553703', 'washbasin', 0.015889827)]] 
+> Cleverhans FGSM: [[('n03903868', 'pedestal', 0.1338335), ('n04141975', 'scale', 0.10725212), ('n03482405', 'hamper', 0.091944754), ('n03127925', 'crate', 0.05115742), ('n04553703', 'washbasin', 0.015928818)]] 
 ```
 
 ## Related Work
